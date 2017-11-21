@@ -1,0 +1,28 @@
+{
+
+  "manifest_version": 2,
+  "name": "OpenUrlList",
+  "version": "1.0.0",
+
+  "description": "Opens all URLs from the list as new tabs in the current window.",
+
+  "permissions": ["tabs", "storage"],
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "homepage_url": "https://github.com/mobislan/OpenUrlList",
+  "options_ui": {
+    "page": "settings.html"
+  },
+  "applications": {
+    "gecko": {
+      "id": "mobislan@users.noreply.github.com_OpenUrlList",
+      "strict_min_version": "52.0"
+    }
+  },
+  "browser_action": {
+    "default_icon": "icons/up.jpg",
+    "default_title": "Load Urls!"
+}
+}
